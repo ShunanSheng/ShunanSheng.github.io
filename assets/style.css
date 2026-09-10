@@ -29,7 +29,8 @@ h1 { font-size: 1.95rem; line-height: 1.2; letter-spacing: -.035em; margin: 1.2r
 .affiliation { font-size: 1rem; line-height: 1.6; margin: 0; }
 .fellowship { color: var(--muted); font-size: .875rem; line-height: 1.55; margin: .85rem 0 1.05rem; }
 .email { display: inline-block; font-size: .875rem; overflow-wrap: anywhere; }
-.profile-links { display: flex; align-items: center; gap: 1.15rem; font-size: .875rem; margin-top: 1rem; }
+.profile-links { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.15rem; font-size: .875rem; margin-top: 1rem; }
+.profile-links > a { white-space: nowrap; }
 .cv-link { display: inline-flex; align-items: center; gap: .75rem; padding: .4rem .7rem; border: 1px solid #b9cbd8; border-radius: 3px; }
 .cv-link:hover { background: var(--tint); text-decoration: none; }
 .navigation { margin: 1.8rem 0 0; border-top: 1px solid var(--line); padding-top: 1.05rem; display: grid; gap: .12rem; }
