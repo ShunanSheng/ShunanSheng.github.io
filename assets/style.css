@@ -29,7 +29,11 @@ h1 { font-size: 1.95rem; line-height: 1.2; letter-spacing: -.035em; margin: 1.2r
 .affiliation { font-size: 1rem; line-height: 1.6; margin: 0; }
 .fellowship { color: var(--muted); font-size: .875rem; line-height: 1.55; margin: .85rem 0 1.05rem; }
 .email { display: inline-block; font-size: .875rem; overflow-wrap: anywhere; }
-.profile-links { display: flex; align-items: center; gap: 1.15rem; font-size: .875rem; margin-top: 1rem; }
+.profile-links { display: flex; flex-wrap: nowrap; align-items: center; gap: .5rem; font-size: .875rem; margin-top: 1rem; }
+.profile-links > a { flex-shrink: 0; white-space: nowrap; }
+.social-link { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2.5rem; border-radius: 3px; }
+.social-link svg { display: block; width: 1.5rem; height: 1.5rem; fill: currentColor; }
+.social-link:hover { background: var(--tint); text-decoration: none; }
 .cv-link { display: inline-flex; align-items: center; gap: .75rem; padding: .4rem .7rem; border: 1px solid #b9cbd8; border-radius: 3px; }
 .cv-link:hover { background: var(--tint); text-decoration: none; }
 .navigation { margin: 1.8rem 0 0; border-top: 1px solid var(--line); padding-top: 1.05rem; display: grid; gap: .12rem; }
@@ -76,7 +80,7 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5
   h1 { margin: 0 0 .65rem; font-size: 1.8rem; }
   .affiliation { font-size: .9375rem; }
   .fellowship { margin: .55rem 0; }
-  .profile-links { margin-top: .7rem; gap: .75rem; }
+  .profile-links { margin-top: .7rem; }
   .navigation { display: flex; flex-wrap: wrap; gap: .3rem; padding: .9rem 0; border-bottom: 1px solid var(--line); margin: 1.5rem 0 2rem; }
   .navigation a { padding: .35rem .65rem; border-left: 0; border-bottom: 2px solid transparent; font-size: .875rem; }
   .navigation a[aria-current="location"] { border-bottom-color: var(--link); }
